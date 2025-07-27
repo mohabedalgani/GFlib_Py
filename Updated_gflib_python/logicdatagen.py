@@ -60,3 +60,18 @@ for i in range(0, 127):
     else:
         data[i, -1] = 0
 np.savetxt('data/binary/odd_7_parity.txt', data, delimiter=',', fmt='%i')
+
+# odd-6-parity
+data = np.empty((64,7))
+for i in range(0, 64):
+    b = np.binary_repr(i, 6)
+    n = 0
+    for j in range(6):
+        if b[j] == '1':
+            n += 1
+    data[i, :-1] = list(b)
+    if (n == 1) | (n == 3) | (n == 5):
+        data[i, -1] = 1
+    else:
+        data[i, -1] = 0
+np.savetxt('data/binary/odd_6_parity.txt', data, delimiter=',', fmt='%i')
