@@ -1,15 +1,11 @@
 digraph tree {
-    "Plus_s";
-    "Multi_s1";
-    "y3";
-    "y4";
-    "Minus_v2";
-    "y5";
-    "x6";
-    "Plus_s" -> "Multi_s1";
-    "Plus_s" -> "Minus_v2";
-    "Multi_s1" -> "y3";
-    "Multi_s1" -> "y4";
-    "Minus_v2" -> "y5";
-    "Minus_v2" -> "x6";
+    "Minus_s";
+    "x1";
+    "Minus_s2";
+    "x3";
+    "x4";
+    "Minus_s" -> "x1";
+    "Minus_s" -> "Minus_s2";
+    "Minus_s2" -> "x3";
+    "Minus_s2" -> "x4";
 }

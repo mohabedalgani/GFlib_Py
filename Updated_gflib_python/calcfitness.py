@@ -67,7 +67,7 @@ def calcfitness(pop, params):
                         M = np.vstack([M, tmp])
                 tmpX = M[:, :-1]
                 tmpY = M[:, -1]
-        elif (params['data'] == 'logic_6_multiplexer.txt') | (params['data'] == 'odd_7_parity.txt') | (params['data'] == 'odd_3_parity.txt'):
+        elif (params['data'] == 'logic_6_multiplexer.txt') | (params['data'] == 'odd_7_parity.txt') | (params['data'] == 'odd_3_parity.txt') | (params['data'] == 'odd_6_parity.txt') | (params['data'] == 'santa_fe_trail.txt'):
             with open(PATH + 'binary/' + params['data']) as f:
                 M = np.array([])
                 file = f.read().split('\n')
